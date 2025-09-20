@@ -1,36 +1,97 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# IDE
+.vscode/
+.claude/
+.idea/
+*.swp
+*.swo
+*~
 
-# dependencies
-/node_modules
+# Dependencies
+node_modules/
 /.pnp
 .pnp.js
 
-# testing
-/coverage
+# Testing
+coverage/
+.coverage
+htmlcov/
+*.cover
+.pytest_cache/
 
-# next.js
-/.next/
-/out/
+# Next.js
+.next/
+out/
+build/
+dist/
 
-# production
-/build
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
 
-# misc
-.DS_Store
-*.pem
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
 
-# debug
+# Database
+*.db
+*.sqlite
+mongo_data/
+data/vector_db/
+
+# Logs
+*.log
+logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
-# local env files
-.env*.local
-.env
+# OS
+.DS_Store
+Thumbs.db
+*.pem
 
-# vercel
-.vercel
+# Docker
+docker-compose.override.yml
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Vercel
+.vercel
+
+# CI/CD
+.secrets.baseline
+*.sarif
+safety-*.json
+audit-*.json
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Security
+*.key
+*.crt
+.gitguardian/
+
+# Misc
+*.bak
+.cache/
+temp/
+*.tmp
+*.backup
